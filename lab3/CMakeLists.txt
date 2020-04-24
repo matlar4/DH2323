@@ -7,7 +7,6 @@ add_executable( ThirdLab skeleton.cpp)
 
 #list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 set(SDL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/SDL-1.2.15/include)
-#find_package (SDL REQUIRED)
 
 add_custom_target(ExternalDlls
 COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_SOURCE_DIR}/SDL_1.2_x86_vs2015/SDL.dll          ${CMAKE_BINARY_DIR}/Release
